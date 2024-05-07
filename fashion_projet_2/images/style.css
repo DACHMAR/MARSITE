@@ -1,0 +1,217 @@
+/*Reset*/
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* Conteneur pour limiter la largeur */
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+  }
+  
+  /* Alignement du texte au centre */
+  .text-center {
+    text-align: center;
+  }
+  
+  
+  /* Flexbox pour les lignes */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .jc-between{
+    justify-content: space-between;
+    max-width: 1440px;
+  }
+  .bg-dark {
+    background-color: #053b44;
+  }
+  .text-blanc {
+    color: white;
+  }
+  /* Classes pour les colonnes */
+  .col-100 {
+    width: 100%;
+  }
+  .col-70 {
+    width: 70%;
+  }
+  .col-50 {
+    width: 50%;
+  }
+  .col-49{
+    width: 49%;
+  }
+  .col-33 {
+    width: 33.33%;
+  }
+
+  .mt-50{
+    margin-top: 50px;
+  }
+
+  /*Navigation-navbarre*/
+
+  .banner {
+    position: relative; 
+    max-width: 100%; /* Pour limiter la largeur de la photo à 1440px */
+    margin: 0 auto; /* Pour centrer la photo horizontalement */
+}
+
+.banner video {
+    width: 100%; /* Pour que l'image occupe toute la largeur disponible */
+    height: auto; /* Pour conserver le ratio de l'image */
+    display: block; /* Pour éliminer l'espace réservé pour les images */
+    margin-bottom: ;
+}
+div.logo img{
+    width: 15%;
+}
+.menu-fixe {
+    position: absolute; /* Position absolue pour que la barre de navigation soit placée par-dessus la photo */
+    top: 40px; /* Positionnement de la barre de navigation par rapport au haut */
+    left: 50px; /* Positionnement de la barre de navigation par rapport à la gauche */
+    right: 50px; /* Positionnement de la barre de navigation par rapport à la droite */
+    z-index: 1; /* Pour placer la barre de navigation au-dessus de la photo */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.promo {
+    z-index: 1; /* Pour placer la barre de navigation au-dessus de la photo */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 3px;
+    
+}
+.promo a {
+    color: rgb(66, 158, 63);
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    text-decoration: none; 
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-droite {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-droite > a {
+    text-decoration: none;
+}
+
+/*cadre haut de page a propos + texte au dessus */
+.A-propos-cadre {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: 80px; /* Positionnement par rapport au bas */
+    right: 100px; /* Positionnement par rapport à la droite */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+}
+.A-propos-cadre h2 a{
+    font-size: 50px;
+    font-weight: 600;
+    font-style: italic;
+    border: 2px solid white;
+    color: white;
+    padding: 60px;
+}
+.A-propos-cadre p {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 40px;
+    padding-right: 80px;
+
+}
+
+/*caroussel1*/
+
+.carrousel {
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid black;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.photos {
+    display: flex; /* Aligner les images horizontalement */
+    transition: transform 0.5s ease; /* Animation douce pour le défilement */
+}
+
+.photo {
+    min-width: 800px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.bouton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+#g{
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3 ease;
+}
+#d{
+    margin-left: 777px;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3 ease;
+}
+#g:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity:1;
+    transition: all 0.3 ease;
+}
+#d:hover{
+    transform:rotate(0deg) scale(1.1);
+    opacity:1;
+    transition: all 0.3 ease;
+}
